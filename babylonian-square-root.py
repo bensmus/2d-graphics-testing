@@ -8,7 +8,7 @@ def babylon(n):
     x = []
     y = []
 
-    # after 10 cycles, est will approximate the root
+    # after 10 cycles, est will approximate the root accurately
     est = n/2
 
     for i in range(10):
@@ -26,8 +26,8 @@ root, x, y = babylon(int(input("enter number: ")))
 print(root)
 
 # we are graphing n/est because if n/est = est, est is the root
-# the upper left corner of the graph should contain
-# a point where the x and y values are nearly identical
+''' the upper left corner of the graph should contain
+a point where the x and y values are nearly identical '''
 
 plt.plot(x, y)
 plt.show()
